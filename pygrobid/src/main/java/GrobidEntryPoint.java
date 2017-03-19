@@ -6,11 +6,7 @@ import org.grobid.core.engines.Engine;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.mock.MockContext;
 import org.grobid.core.utilities.GrobidProperties;
-import org.slf4j.impl.SimpleLogger;
 import py4j.GatewayServer;
-
-import java.nio.file.Paths;
-import java.nio.file.Path;
 
 public class GrobidEntryPoint {
 

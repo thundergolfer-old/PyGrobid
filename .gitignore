@@ -125,3 +125,5 @@ pygrobid/grobid-grobid-parent-0.4.1
 
 # Ignore unzipped slf4j library. Only using 2 .jar files which have been coped to /lib
 slf4j-1.7.25/
+
+grobid-example-master
