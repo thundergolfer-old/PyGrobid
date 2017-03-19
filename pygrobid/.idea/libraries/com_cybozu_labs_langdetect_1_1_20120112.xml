@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.cybozu.labs:langdetect:1.1-20120112" type="repository">
+    <properties maven-id="com.cybozu.labs:langdetect:1.1-20120112" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cybozu/labs/langdetect/1.1-20120112/langdetect-1.1-20120112.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/arnx/jsonic/1.2.7/jsonic-1.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

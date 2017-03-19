@@ -1,6 +1,7 @@
 /**
  * Created by jbelotti on 19/3/17.
  */
+import org.grobid.core.data.BiblioItem;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.mock.MockContext;
@@ -14,6 +15,14 @@ import java.nio.file.Path;
 public class GrobidEntryPoint {
 
     private Engine engine;
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public BiblioItem biblioItem() {
+        return new BiblioItem();
+    }
 
     public GrobidEntryPoint() {
 
@@ -38,8 +47,8 @@ public class GrobidEntryPoint {
             engine = GrobidFactory.getInstance().createEngine();
 
             // Biblio object for the result
-//            BiblioItem resHeader = new BiblioItem();
-//            String tei = engine.processHeader(pdfPath, false, resHeader);
+            BiblioItem resHeader = new BiblioItem();
+            String tei = engine.processHeader(pdfPath, false, resHeader);
         }
         catch (Exception e) {
             // If an exception is generated, print a stack trace
