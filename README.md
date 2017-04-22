@@ -1,4 +1,4 @@
-# PyGrobid [![Build Status](https://travis-ci.com/thundergolfer/PyGrobid.svg?token=yHGWQ42iK2BPk1FjaUMc&branch=master)](https://travis-ci.com/thundergolfer/PyGrobid) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# PyGrobid [![Build Status](https://travis-ci.com/thundergolfer/PyGrobid.svg?token=yHGWQ42iK2BPk1FjaUMc&branch=master)](https://travis-ci.com/thundergolfer/PyGrobid) [![Code Climate](https://codeclimate.com/repos/58fb912ffa56d30291001e98/badges/daaf3216427e8db61d09/gpa.svg)](https://codeclimate.com/repos/58fb912ffa56d30291001e98/feed) [![Issue Count](https://codeclimate.com/repos/58fb912ffa56d30291001e98/badges/daaf3216427e8db61d09/issue_count.svg)](https://codeclimate.com/repos/58fb912ffa56d30291001e98/feed) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 -----
 
