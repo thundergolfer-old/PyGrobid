@@ -8,7 +8,7 @@ A Python wrapper for the Grobid scholarly information extraction library
 
 ## Simple Demo
 
-**Note**: For `pygrobid` to function the Java server must be started and running. `pygrobid` does not (yet) start Java side of things up itself.
+**Note**: For `pygrobid` to function the Java server must be started and running. `pygrobid` does not (yet) start Java side of things up itself. Currently it can be started from the root directory with `cd pygrobid && mvn exec:exec -Pprocess_header_bibtex`.
 
 ```python
 from pygrobid import Grobid
