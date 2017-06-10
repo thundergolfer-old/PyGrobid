@@ -1,0 +1,16 @@
+recursive-include pygrobid/src *
+recursive-include pygrobid/target *
+recursive-include pygrobid/lib *
+recursive-include pygrobid/slf4j-1.7.25 *
+include pygrobid/pom.xml
+include pygrobid/pygrobid.iml
+recursive-exclude pygrobid/grobid-example-master *
+recursive-exclude pygrobid/grobid-grobid-parent-0.4.1 *
+recursive-exclude pygrobid/.idea *
+recursive-exclude pygrobid/__pycache__ *
+
+#Misc
+include LICENSE
+include README.md
+
+exclude pygrobid/.DS_Store
