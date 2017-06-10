@@ -9,7 +9,7 @@
 
 From within `Pygrobid/pygrobid` run:
 
-`mvn exec:exec -Pprocess_header_bibtex` (yeah yeah, will change the process name later)
+`mvn exec:exec -Pstart_grobid`
 
 The above starts the Java server, which is essential because Py4J will not start it itself.
 From there you should be able to just use the python library like:

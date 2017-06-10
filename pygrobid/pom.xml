@@ -184,12 +184,12 @@
     </build>
 
     <profiles>
-        <!-- mvn exec:exec -Pprocess_header_bibtex-->
+        <!-- mvn exec:exec -Pstart_grobid-->
         <profile>
-            <id>process_header_bibtex</id>
+            <id>start_grobid</id>
             <activation>
                 <property>
-                    <name>process_header_bibtex</name>
+                    <name>start_grobid</name>
                 </property>
             </activation>
             <build>
