@@ -6,10 +6,14 @@ A Python wrapper for the Grobid scholarly information extraction library
 
 -----
 
-## Simple Demo 
+## Simple Demo
+
+**Note**: For `pygrobid` to function the Java server must be started and running. `pygrobid` does not (yet) start Java side of things up itself.
 
 ```python
-demo = "coming soon"
+from pygrobid import Grobid
+g = Grobid()
+g.process_references('some_pdf_file.pdf')
 ```
 
 ## About Grobid
@@ -20,7 +24,7 @@ GROBID is a machine learning library for extracting, parsing and re-structuring 
 
 **For a list of features and more information, see the [Kermitt2/Grobid repo](https://github.com/kermitt2/grobid).**
 
-## Installation 
+## Installation
 
 `coming soon`
 
