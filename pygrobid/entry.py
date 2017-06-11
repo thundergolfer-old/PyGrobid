@@ -1,10 +1,30 @@
+import subprocess
+import os
+import time
+
 from py4j.java_gateway import JavaGateway
+
+
+def start_server():
+    MAX_WAIT_TIME_FOR_JAVA_SERVER = 3
+    here = os.path.abspath(os.path.dirname(__file__))
+    p = subprocess.Popen(['mvn exec:exec -Pstart_grobid'],
+                         cwd=here,
+                         shell=True,
+                         stdin=subprocess.PIPE,
+                         stderr=subprocess.PIPE,
+                         stdout = subprocess.PIPE)
+    time.sleep(MAX_WAIT_TIME_FOR_JAVA_SERVER)
+
 
 class Grobid():
 
     def __init__(self):
         self._gateway = JavaGateway()
         self._grobid_engine = self._gateway.entry_point.getEngine()
+
+    def shutdown(self):
+        self._gateway.shutdown()
 
     def process_authors_header(self, author_sequence):
         return self._grobid_engine.processAuthorsHeader(author_sequence)

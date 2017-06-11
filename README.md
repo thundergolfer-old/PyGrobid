@@ -11,9 +11,11 @@ A Python wrapper for the Grobid scholarly information extraction library
 **Note**: For `pygrobid` to function the Java server must be started and running. `pygrobid` does not (yet) start Java side of things up itself. Currently it can be started from the root directory with `cd pygrobid && mvn exec:exec -Pstart_grobid`.
 
 ```python
-from pygrobid import Grobid
+from pygrobid import Grobid, start_server
+start_server()
 g = Grobid()
 g.process_references('some_pdf_file.pdf')
+g.shutdown()
 ```
 
 ## About Grobid
@@ -26,7 +28,16 @@ GROBID is a machine learning library for extracting, parsing and re-structuring 
 
 ## Installation
 
-`coming soon`
+#### Java Dependencies
+
+These are required for running **Grobid**.
+
+* Java 1.8+
+* [Apache Maven](https://maven.apache.org/)
+
+#### Package Installation
+
+`pip install pygrobid && python -c 'import pygrobid; pygrobid.get_dependencies()'`
 
 ## License
 

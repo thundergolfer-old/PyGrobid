@@ -1,6 +1,8 @@
 from setuptools import setup, find_packages  # Always prefer setuptools over distutils
+from setuptools.command.install import install
 from codecs import open  # To use a consistent encoding
 from os import path
+
 
 here = path.abspath(path.dirname(__file__))
 
@@ -8,13 +10,14 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
+
 setup(
     name='pygrobid',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='0.0.4',
+    version='0.0.15',
 
     description='Python bindings to the Grobid machine learning citation extraction software.',
     long_description=long_description,
@@ -51,9 +54,14 @@ setup(
     # What does your project relate to?
     keywords='grobid citation-extraction bindings',
 
-    packages=["pygrobid"],
+    packages=find_packages(),
 
-    install_requires=['py4j'],
+    install_requires=["py4j", "requests"],
+
+    setup_requires=["py4j", "requests"],
 
     include_package_data=True,
+
+    #run custom code
+    # cmdclass={'install': MyInstall}
 )
