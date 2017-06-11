@@ -12,6 +12,7 @@ A Python wrapper for the Grobid scholarly information extraction library
 
 ```python
 from pygrobid import Grobid, start_server
+
 start_server()
 g = Grobid()
 g.process_references('some_pdf_file.pdf')
