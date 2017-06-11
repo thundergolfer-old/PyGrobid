@@ -17,7 +17,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='0.0.14',
+    version='0.0.15',
 
     description='Python bindings to the Grobid machine learning citation extraction software.',
     long_description=long_description,
@@ -54,7 +54,7 @@ setup(
     # What does your project relate to?
     keywords='grobid citation-extraction bindings',
 
-    packages=["pygrobid"],
+    packages=find_packages(),
 
     install_requires=["py4j", "requests"],
 
