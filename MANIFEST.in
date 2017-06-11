@@ -9,6 +9,8 @@ recursive-exclude pygrobid/grobid-grobid-parent-0.4.1 *
 recursive-exclude pygrobid/.idea *
 recursive-exclude pygrobid/__pycache__ *
 
+include pygrobid/scripts/download_deps.sh
+
 #Misc
 include LICENSE
 include README.md

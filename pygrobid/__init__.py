@@ -1,1 +1,2 @@
 from pygrobid.entry import Grobid
+from pygrobid.scripts.download_and_place_dependencies import get_dependencies
