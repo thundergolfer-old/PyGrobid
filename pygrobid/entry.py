@@ -57,7 +57,7 @@ class Grobid():
         * @return the list of parsed references as bibliographical objects enriched
         *         with citation contexts
         """
-        input_file = self._gateway.jvm.java.io.File(filepath)
+        input_file = self._gateway.jvm.java.io.File(os.path.abspath(filepath))
         return self._grobid_engine.processReferences(input_file, consolidate)
 
     def process_header(self, input_file, consolidate=False):
